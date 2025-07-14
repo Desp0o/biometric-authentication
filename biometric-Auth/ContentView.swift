@@ -37,7 +37,7 @@ struct ContentView: View {
     .padding()
   }
   
-  func auth() {
+  @MainActor func auth() {
     let context = LAContext()
     var error: NSError?
     
